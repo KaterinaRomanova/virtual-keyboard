@@ -1,0 +1,111 @@
+body{
+    margin:auto;
+    margin-top: 100px;
+    background-color: rgb(26, 25, 25);
+}
+.textarea{
+    display: block;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgb(26, 25, 25);
+    resize: none;
+    box-shadow: 0 0 5px 2px red;
+}
+.keyboard{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 0;
+    padding-bottom: 0;
+    background-color: #a0d0d6;
+    border: 7px solid #ffffff;
+    padding: 5px;
+    border-radius: 30px;
+    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    animation: keyboard 2s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 5px 2px red;
+}
+@keyframes keyboard {
+    100% {
+        background-position: 0 200px;
+    }
+}
+
+.keyboard .keyboard__row{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.keyboard__row>div{
+    border: 2px solid #ffffff;
+    border-radius:15px;
+    height: 100%;
+    width: 45px;
+    background-color: #444444;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    box-shadow: 0 0 5px 2px red;
+}
+.caption{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    margin:10px auto;
+    text-align: center;
+    color:#ffffff;;
+    text-shadow: red 0 0 10px;
+}
+.keyboard__row>.Backspace, .keyboard__row>.CapsLock, .keyboard__row>.Enter{
+    width: 130px;
+}
+.keyboard__row>.Tab, .keyboard__row>.Delete, .keyboard__row>.Enter{
+    width: 100px;
+}
+.keyboard__row>.ArrowDown, .keyboard__row>.ArrowRight,.keyboard__row>.ArrowLeft{
+    width: 72px;
+}
+.keyboard__row>.ShiftRight{
+    width: 65px;
+}
+.keyboard__row>.ArrowUp, .keyboard__row>.ControlLeft, .keyboard__row>.MetaLeft, .keyboard__row>.AltLeft, .keyboard__row>.AltRight,.keyboard__row>.ControlRight{
+    width: 60px;
+}
+.keyboard__row>.Space{
+width: 500px;
+}
+.keyboard__row>.ShiftLeft{
+    width: 200px;
+    }
+.keyboard__row>div:hover{
+    background-color: #3a5d6d;
+    color:#ffffff;
+}
+.keyboard__row .press{
+    background-color: #ffffff;
+    color:#444444;
+    animation: background 5s infinite alternate;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+    box-shadow: none;
+    transform: translateY(4px);
+}
+@keyframes background {
+    50% {
+        background: rgb(177, 221, 238);
+        box-shadow: 0 -200px 100px -100px rgb(180, 31, 11) inset;
+    }
+}
