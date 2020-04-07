@@ -1,7 +1,7 @@
 body{
     margin:auto;
     margin-top: 100px;
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(22, 24, 34);
 }
 .textarea{
     display: block;
@@ -11,7 +11,7 @@ body{
     padding: 10px;
     font-size: 18px;
     color: #ffffff;
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(22, 24, 34);
     resize: none;
     box-shadow: 0 0 5px 2px red;
 }
@@ -26,12 +26,12 @@ body{
     border: 7px solid #ffffff;
     padding: 5px;
     border-radius: 30px;
-    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    background: linear-gradient(rgb(124, 59, 121), rgb(187, 110, 130), rgb(192, 88, 114), rgb(113, 184, 212), rgb(173, 64, 86));
     animation: keyboard 2s infinite alternate;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0 0 5px 2px red;
+    box-shadow: 0 0 5px 2px rgb(113, 184, 212);
 }
 @keyframes keyboard {
     100% {
@@ -53,22 +53,22 @@ body{
     border-radius:15px;
     height: 100%;
     width: 45px;
-    background-color: #444444;
+    background-color: #0a2a2f;
     margin: 5px;
     text-align: center;
     justify-content: center;
     color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 26px;
-    box-shadow: 0 0 5px 2px red;
+    box-shadow: 0 0 5px 2px rgb(223, 31, 105);
 }
 .caption{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+    font-size: 30px;
     margin:10px auto;
     text-align: center;
     color:#ffffff;;
-    text-shadow: red 0 0 10px;
+    text-shadow: rgb(223, 31, 105) 0 0 10px;
 }
 .keyboard__row>.Backspace, .keyboard__row>.CapsLock, .keyboard__row>.Enter{
     width: 130px;
@@ -86,19 +86,20 @@ body{
     width: 60px;
 }
 .keyboard__row>.Space{
-width: 500px;
+width: 470px;
 }
 .keyboard__row>.ShiftLeft{
-    width: 200px;
+    width: 220px;
     }
 .keyboard__row>div:hover{
-    background-color: #3a5d6d;
+    background-color: rgb(22, 24, 34);
     color:#ffffff;
+    cursor: pointer;
 }
 .keyboard__row .press{
     background-color: #ffffff;
     color:#444444;
-    animation: background 5s infinite alternate;
+    animation: background 2s infinite alternate;
     text-shadow:0px 1px 0px rgba(0,0,0,0.5);
     box-shadow: none;
     transform: translateY(4px);
@@ -106,6 +107,7 @@ width: 500px;
 @keyframes background {
     50% {
         background: rgb(177, 221, 238);
-        box-shadow: 0 -200px 100px -100px rgb(180, 31, 11) inset;
+        box-shadow: 0 -200px 100px -100px rgb(223, 31, 105) inset;
     }
 }
+
